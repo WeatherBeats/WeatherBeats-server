@@ -15,54 +15,52 @@ describe('spotify-auth app tests', () => {
           'longitude': '-122.68391039999999'
         }
       );
-    expect(res.body).toBe(
-      {
-        "data": [
-          {
-            "rh": 52,
-            "pod": "d",
-            "lon": -122.68,
-            "pres": 1015.9,
-            "timezone": "America/Los_Angeles",
-            "ob_time": "2021-03-04 19:36",
-            "country_code": "US",
-            "clouds": 100,
-            "ts": 1614886560,
-            "solar_rad": 115.3,
-            "state_code": "OR",
-            "city_name": "Portland",
-            "wind_spd": 5.6,
-            "wind_cdir_full": "southeast",
-            "wind_cdir": "SE",
-            "slp": 1017.3,
-            "vis": 3.1,
-            "h_angle": -15,
-            "sunset": "02:02",
-            "dni": 834.75,
-            "dewpt": 35.5,
-            "snow": 0,
-            "uv": 4.99558,
-            "precip": 0,
-            "wind_dir": 140,
-            "sunrise": "14:40",
-            "ghi": 576.66,
-            "dhi": 102.45,
-            "aqi": 50,
-            "lat": 45.51,
-            "weather": {
-              "icon": "c04d",
-              "code": 804,
-              "description": "Overcast clouds"
-            },
-            "datetime": "2021-03-04:19",
-            "temp": 52.7,
-            "station": "ODT10",
-            "elev_angle": 35.17,
-            "app_temp": 52.6
-          }
-        ],
-        "count": 1
-      }
-    );
+    expect(res.body).toEqual({
+      "data": [
+        {
+          "rh": expect.any(Number),
+          "pod": expect.any(String),
+          "lon": expect.any(Number),
+          "pres": expect.any(Number),
+          "timezone": expect.any(String),
+          "ob_time": expect.any(String),
+          "country_code": expect.any(String),
+          "clouds": expect.any(Number),
+          "ts": expect.any(Number),
+          "solar_rad": expect.any(Number),
+          "state_code": expect.any(String),
+          "city_name": expect.any(String),
+          "wind_spd": expect.any(Number),
+          "wind_cdir_full": expect.any(String),
+          "wind_cdir": expect.any(String),
+          "slp": expect.any(Number),
+          "vis": expect.any(Number),
+          "h_angle": expect.any(Number),
+          "sunset": expect.any(String),
+          "dni": expect.any(Number),
+          "dewpt": expect.any(Number),
+          "snow": expect.any(Number),
+          "uv": expect.any(Number),
+          "precip": expect.any(Number),
+          "wind_dir": expect.any(Number),
+          "sunrise": expect.any(String),
+          "ghi": expect.any(Number),
+          "dhi": expect.any(Number),
+          "aqi": expect.any(Number),
+          "lat": expect.any(Number),
+          "weather": {
+            "icon": expect.any(String),
+            "code": expect.any(Number),
+            "description": expect.any(String)
+          },
+          "datetime": expect.any(String),
+          "temp": expect.any(Number),
+          "station": expect.any(String),
+          "elev_angle": expect.any(Number),
+          "app_temp": expect.any(Number)
+        }
+      ],
+      "count": 1
+    });
   });
 });
