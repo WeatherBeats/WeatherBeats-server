@@ -2,12 +2,12 @@
   "name": "weatherbeats-server",
   "version": "1.0.0",
   "description": "",
-  "main": "lib/app.js",
+  "main": "server.js",
   "scripts": {
     "test": "jest --verbose --runInBand --testLocationInResults --setupFiles dotenv/config",
     "test:watch": "npm run test -- --watch",
-    "start": "node -r dotenv/config lib/app.js",
-    "start:watch": "nodemon -r dotenv/config lib/app.js"
+    "start": "node -r dotenv/config server.js",
+    "start:watch": "nodemon -r dotenv/config server.js"
   },
   "jest": {
     "testEnvironment": "node"
@@ -33,6 +33,8 @@
     "node-fetch": "^2.6.1",
     "pg": "^8.5.1",
     "querystring": "^0.2.1",
-    "request": "^2.88.2"
+    "request": "^2.88.2",
+    "superagent": "^6.1.0",
+    "url": "^0.11.0"
   }
 }
