@@ -72,11 +72,6 @@ function weatherTranslator(weather) {
   return searchTerm.value;
 }
 
-module.exports = {
-  weatherTranslator
-};
-
-
 function chosenWeatherTranslator(weather) {
 
   const dict = {
@@ -95,5 +90,5 @@ function chosenWeatherTranslator(weather) {
 }
 
 module.exports = {
-  chosenWeatherTranslator
+  chosenWeatherTranslator, weatherTranslator
 };
