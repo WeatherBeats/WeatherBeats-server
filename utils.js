@@ -75,13 +75,13 @@ function weatherTranslator(weather) {
 function chosenWeatherTranslator(weather) {
 
   const dict = {
-    'sunny': 'party',
-    'cloudy': 'mellow',
-    'thunder': 'edm',
-    'rain': 'jazz',
-    'freezing-rain': 'house',
-    'snow': 'christmas',
-    'hazy': 'classical'
+    'sunny': 'upbeat',
+    'cloudy': 'overcast',
+    'thunder': 'angry',
+    'rain': 'mellow',
+    'freezing-rain': 'peril',
+    'snow': 'dreamy',
+    'hazy': 'hazy'
   };
 
   const searchTerm = Object.getOwnPropertyDescriptor(dict, weather);
