@@ -23,8 +23,8 @@ function weatherTranslator(weather) {
     'r02n': 'chill+night',
     'r03d': 'intense',
     'r03n': 'intense+night',
-    'f01d': 'peril',
-    'f01n': 'peril+night',
+    'f01d': 'quiet',
+    'f01n': 'quiet+night',
     'r04d': 'soothing',
     'r04n': 'soothing+night',
     'r05d': 'soothing',
@@ -79,7 +79,7 @@ function chosenWeatherTranslator(weather) {
     'cloudy': 'overcast',
     'thunder': 'angry',
     'rain': 'mellow',
-    'freezing-rain': 'peril',
+    'freezing-rain': 'quiet',
     'snow': 'dreamy',
     'hazy': 'hazy'
   };
